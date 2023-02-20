@@ -1,6 +1,7 @@
 package com.sparta.board.entity;
 
 import com.sparta.board.dto.request.BoardRequest;
+import com.sparta.board.dto.response.CommentResponse;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

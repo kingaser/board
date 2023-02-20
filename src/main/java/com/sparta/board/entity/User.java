@@ -30,7 +30,7 @@ public class User {
     @Enumerated(value = EnumType.STRING)
     private UserRoleEnum role;
 
-    @OneToMany
+    @OneToMany(mappedBy = "user")
     List<Board> boards = new ArrayList<>();
 
     public User(String username, String password, String email, UserRoleEnum role) {

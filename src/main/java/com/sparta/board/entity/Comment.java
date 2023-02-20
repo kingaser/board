@@ -1,5 +1,6 @@
 package com.sparta.board.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sparta.board.dto.request.CommentRequest;
 import lombok.Builder;
 import lombok.Getter;

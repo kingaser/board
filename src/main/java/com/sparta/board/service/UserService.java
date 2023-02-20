@@ -75,7 +75,7 @@ public class UserService {
 
         //header에 들어갈 JWT 세팅
         HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.set(JwtUtil.AUTHORIZATION_HEADER, jwtUtil.createToken(user.get().getUsername()));
+        httpHeaders.set(JwtUtil.AUTHORIZATION_HEADER, jwtUtil.createToken(user.get().getUsername(), user.get().getRole()));
 
         return ResponseEntity.ok()
                 .headers(httpHeaders)
